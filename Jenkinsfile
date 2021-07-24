@@ -5,7 +5,7 @@ agent any
 stages{
 
 	stage('Check Out SCM')
-	{step { input (git branch: 'main', url: 'https://github.com/kiran136/Pipeline-Job.git')}}
+	{step { git branch: 'main', url: 'https://github.com/kiran136/Pipeline-Job.git'}}
 	
 	stage('clone the code')
 	{ 
